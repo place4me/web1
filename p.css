@@ -40,7 +40,7 @@ margin: 0px;
     display: block;
   }
 }
-@media(max-width:330px) {
+@media(max-width:450px) {
   h1 {
   padding: 0px;
   font-size: 22px;
