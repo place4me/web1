@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Array_Loop</title>
+  </head>
+  <body>
+    <script>
+      var fruits=["apple", "banana", "grape"];
+      document.write(fruits[0]);
+      document.write(fruits[2]);
+      document.write(fruits.length);
+    </script>
+    <script>
+      fruits.push("mango");
+      document.write(fruits.length);
+    </script>
+    <hr>
+  <ul>
+    <script>
+      document.write('<li>apple</li>');
+      document.write('<li>banana</li>');
+      document.write('<li>grape</li>');
+      document.write('<li>mango</li>');
+    </script>
+  </ul>
+  <hr>
+  <ul>
+    <script>
+      document.write('<li>apple</li>');
+      var i=0;
+      while(i<3) {
+      document.write('<li>banana</li>');
+      document.write('<li>grape</li>');
+      i=i+1;
+      }
+      document.write('<li>mango</li>');
+    </script>
+  </ul>
+  <hr>
+    <script>
+      var animals=['dog', 'cat', 'hamster', 'butterfly'];
+    </script>
+  <ul>
+    <script>
+      var i=0;
+      while(i<6) {
+      document.write('<li>'+animals[i]+'</li>');
+            i=i+1;
+      }
+    </script>
+  </ul>
+  <hr>
+  <script>
+    var animals=['dog', 'cat', 'hamster', 'butterfly'];
+  </script>
+<ul>
+  <script>
+    var i=0;
+    while(i< animals.length) {
+    document.write('<li>'+animals[i]+'</li>');
+          i=i+1;
+    }
+  </script>
+</ul>
+<hr>
+<script>
+  var animals=['dog', 'cat', 'hamster', 'butterfly'];
+</script>
+<ul>
+<script>
+  var i=0;
+  while(i< animals.length) {
+  document.write('<li><a href="http://doyoung.com/'+animals[i]+'">'+animals[i]+'</a></li>');
+        i=i+1;
+  }
+</script>
+</ul>
+  </body>
+</html>

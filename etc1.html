@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>grid_동영상_오디오</title>
+    <style>
+    h1 {
+      border: 5px red solid;
+      padding: 20px;
+      margin: 10px;
+      width: 100px;
+    }
+    div{
+      border: 3px gray solid;
+    }
+    #na {
+      border: 5px pink solid;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>CSS</h1>
+    <h1>CSS</h1>
+    <div Id="na">
+      <div>Navigation</div>
+      <div>Article</div>
+    </div>
+
+    <hr>
+    <h2>동영상</h2>
+    <video width="480" controls>
+      <source src="201611_14_snow_original.mp4" type="video/mp4"/>
+    </video>
+
+    <hr>
+    <h2>오디오</h2>
+    <audio controls>
+      <source src="WhiteNoise.mp3" type="audio/mp3"/>
+    </audio>
+  </body>
+</html>
