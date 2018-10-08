@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML_Table</title>
+    <style media="screen">
+      table{
+        border-collapse: collapse;
+        width:350px;
+      }
+      .firstt th, .firstt td{
+        border: 2px solid #808080;
+        text-align: center;
+      }
+      #inner{
+        padding:20px;
+      }
+      .secondt th, .secondt td{
+        border: 1px solid black;
+        text-align: left;
+        padding: 5px;
+      }
+      .secondt th{
+        background-color:#808080;
+      }
+      .secondt tr:nth-child(2n+3){
+        background-color:#DCDCDC;
+      }
+      .thirdt th, .thirdt td{
+        border: 1px solid black;
+        text-align: left;
+        padding: 5px;
+      }
+      .fourtht th, .fourtht td{
+        border: 1px solid black;
+        text-align: left;
+        padding: 5px;
+      }
+      #fiftht{
+        width:800px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="index.html"><button style="width:80px; border-radius:6px;
+    cursor:pointer; font-family:verdana; background-color:thistle;
+    color:purple">Home</button></a></br>
+    <hr>
+
+    <h1>Nested Table</h1>
+    <table class="firstt">
+      <caption>Age of Laptop</caption>
+      <tr style="background-color:#CC9966">
+        <th>No.</th>
+        <th>Image</th>
+        <th>Table</th>
+      </tr>
+      <tr style="background-color:#CCCC66">
+        <td>1</td>
+        <td><Image src="happy-iconz-32.png"></td>
+        <td id="inner">
+          <table style="background-color:#FFFFCC; width:100%;">
+            <tr style="background-color:#FFCCCC">
+              <td>Name</td>
+              <td>Age</td>
+            </tr>
+            <tr>
+              <td>LGxnote</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>LGgram</td>
+              <td>1</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table><br>
+
+    <h1>nth-child</h1>
+    <table class="secondt">
+      <tr>
+        <th>Fruits</th>
+        <th>Color</th>
+      </tr>
+      <tr>
+        <td>Banana</td>
+        <td>Yellow</td>
+      </tr>
+      <tr>
+        <td>Grape</td>
+        <td>Purple</td>
+      </tr>
+      <tr>
+        <td>Cherry</td>
+        <td>Violet</td>
+      </tr>
+      <tr>
+        <td>Kiwi</td>
+        <td>Green</td>
+      </tr>
+      <tr>
+        <td>Apple</td>
+        <td>Red</td>
+      </tr>
+    </table><br>
+
+<table id="fiftht">
+  <tr>
+    <td>
+    <h1>rowspan</h1>
+    <table class="thirdt">
+      <tr>
+        <th>Fruit</th>
+        <th>Color</th>
+      </tr>
+      <tr>
+        <td>Banana</td>
+        <td>Yellow</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Grape</td>
+        <td>Purple</td>
+      </tr>
+      <tr>
+        <td>Green</td>
+      </tr>
+      <tr>
+        <td>Cherry</td>
+        <td>Violet</td>
+      </tr>
+      <tr>
+        <td>Kiwi</td>
+        <td>Green</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Apple</td>
+        <td>Red</td>
+      </tr>
+      <tr>
+        <td>Green</td>
+      </tr>
+    </table><br>
+  </td>
+
+  <td>
+    <h1>colspan</h1>
+    <table class="fourtht">
+      <tr>
+        <th>Fruits</th>
+        <th colspan="2">Color</th>
+      </tr>
+      <tr>
+        <td>Banana</td>
+        <td colspan="2">Yellow</td>
+      </tr>
+      <tr>
+        <td>Grape</td>
+        <td>Purple</td>
+        <td>Green</td>
+      </tr>
+      <tr>
+        <td>Cherry</td>
+        <td colspan="2">Violet</td>
+      </tr>
+      <tr>
+        <td>Kiwi</td>
+        <td colspan="2">Green</td>
+      </tr>
+      <tr>
+        <td>Apple</td>
+        <td>Red</td>
+        <td>Green</td>
+      </tr>
+    </table><br><br><br><br>
+  </td>
+</tr>
+</table>
+  </body>
+</html>
