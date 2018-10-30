@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML_Forms</title>
+  </head>
+
+  <body style="background-color:#f5f5f5">
+    <a href="index.html"><button style="font-size:20px; border-radius:6px;
+    cursor:pointer; font-family:verdana; background-color:#dcdcdc;
+    color:#696969">Home</button></a>
+    <hr>
+
+    <h1>HTML form</h1>
+    <p>: HTML form contains form elements (input, select, textarea, button..)</p>
+    <h2>&lt;Input&gt;element</h2>
+  <ol type="1">
+    <li><h3>Input type text</h3></li>
+    <form class="" action="index.html" method="post" target="_blank">
+      <input type="text" name="" value="">
+    </form>
+    <li><h3>Input type password</h3></li>
+    <form class="" action="index.html" method="post">
+      <input type="password" name="" value="" size="10" required>
+      <input type="submit" name="" value="Submit">
+    </form>
+    <li><h3>Input type submit</h3></li>
+    <form class="" action="index.html" method="post">
+      <input type="submit" name="" value="제출">
+    </form>
+    <li><h3>Input type reset</h3></li>
+    <form class="" action="index.html" method="post">
+      <input type="reset" name="" value="초기화">
+    </form>
+    <li><h3>Input type radio</h3></li>
+    : Select Only One
+    <form class="" action="index.html" method="post">
+      <input type="radio" name="gender" value="male">Male<br>
+      <input type="radio" name="gender" value="female">Female
+    </form>
+    <li><h3>Input type checkbox</h3></li>
+    : Select Zero of More
+    <form class="" action="index.html" method="post">
+      <input type="checkbox" name="vehicle1" value="Bike">Bike<br>
+      <input type="checkbox" name="vehicle2" value="Car">Car
+    </form>
+    <li><h3>Input type button</h3></li>
+    <form class="" action="index.html" method="post">
+      <input type="button" name="" value="Button" onclick="alert('Hello')">
+    </form>
+    <li><h3>Input type color</h3></li>
+    : A color picker can show up.
+    <form class="" action="index.html" method="post">
+      <input type="color" name="" value="#663399">
+    </form>
+    <li><h3>Input type date</h3></li>
+    : A date picker can show up.
+    <form class="" action="index.html" method="post">
+      <input type="date" name="" value="">
+    </form>
+    <li><h3>Input type email</h3></li>
+    : Input fields should contain an e-mail address.
+    <form class="" action="index.html" method="post">
+      <input type="email" name="" value="">
+      <input type="submit" name="" value="Submit">
+    </form>
+    <li><h3>Input type file</h3></li>
+    : Browse button for file uploads
+    <form class="" action="index.html" method="post">
+      <input type="file" name="" value="" multiple>
+      <input type="submit" name="" value="Submit">
+    </form>
+    <li><h3>input type month</h3></li>
+    : To select a month and year
+    <form class="" action="index.html" method="post">
+      <input type="month" name="" value="">
+    </form>
+    <li><h3>Input type number</h3></li>
+    : Numeric input
+    <form class="" action="index.html" method="post">
+      <input type="number" name="" value=""><br>
+      <input type="number" name="" value="" min="1" max="5"><br>
+      <input type="number" name="" value="50" min="0" max="100" step="10"><br>
+      <input type="submit" name="" value="Submit">
+    </form>
+    <li><h3>Input type range</h3></li>
+    <form class="" action="index.html" method="post">
+      0
+      <input type="range" name="" value="50" min="0" max="100" step="10">
+      100
+    </form>
+    <li><h3>Input type time</h3></li>
+    <form class="" action="index.html" method="post">
+      <input type="time" name="" value="">
+    </form>
+    <li><h3>Input type URL</h3></li>
+    : URL Address
+    <form class="" action="index.html" method="post">
+      <input type="url" name="" value="">
+    </form>
+    <li><h3>Input type image</h3></li>
+    <form class="" action="html1.html" method="post">
+      <input type="image" src="200803_1.JPG" name="" value="" width="50" height="40">
+    </form>
+  </ol><br>
+
+    <h2>&lt;Select&gt;element</h2>
+    : Drop-down List
+    <form class="" action="index.html" method="post">
+      <select class="" name="">
+        <option value="Audi">Audi</option>
+        <option value="volvo" selected>Volvo</option>
+        <option value="Saab">Saab</option>
+      </select>
+    </form><br>
+
+    <h2>&lt;Textarea&gt;element</h2>
+    : Multi-line input field
+    <form class="" action="index.html" method="post">
+      <textarea name="name" rows="8" cols="80">8 rows x 80 columns</textarea>
+    </form><br>
+
+    <h2>&lt;button&gt;element</h2>
+    : Clickable Button<br>
+    <button type="button" name="button" onclick="alert('Hello')">Click</button>
+
+    <h1>Grouping Form Data</h1>
+    <form class="" action="index.html" method="post">
+      <fieldset style="width:400px;">
+        <legend>Personal information</legend> <!-- caption -->
+        First name : <input type="text" name="firstname" value="First name"><br>
+        Last name : <input type="text" name="lastname" value="Last name"><br>
+        Birth date : <input type="date" name="bday" value=""><br>
+        Gender : <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="submit" name="" value="Submit">
+      </fieldset>
+    </form>
+    <br>
+  </body>
+</html>
