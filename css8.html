@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS_Side by Side Images</title>
+<style media="screen">
+  *{
+    box-sizing:border-box;
+  }
+  .img_container{
+    float:left;
+    width:33%;
+    padding:10px;
+    position:relative;
+    }
+  .round{
+    border-radius:50%;
+  }
+  .imgtext{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:white;
+    font-weight: bold;
+  }
+</style>
+</head>
+
+<body style="background-color:#f5f5f5; margin:0px;">
+<a href="index.html" style="font-size:20px;
+  cursor:pointer; font-family:verdana; background-color:#dcdcdc;
+  color:#696969; text-decoration:none; display:block; padding:4px 16px;">Home</a>
+
+<h1>Images_Side by Side</h1>
+  <div class="img_container">
+    <img src="cherry2.jpg" alt="cherry" style="width:100%">
+  </div>
+
+  <div class="img_container">
+    <img src="mango.jpg" alt="mango" style="width:100%">
+    <div class="imgtext">Mango</div>
+  </div>
+
+  <div class="img_container">
+    <img src="grape.jpg" alt="grape" style="width:100%">
+  </div>
+
+  <div class="img_container">
+    <img class="round" src="pineapple.jpg" alt="pineapple" style="width:100%">
+  </div>
+
+  <div class="img_container">
+    <img class="round" src="tangerine2.jpg" alt="tangerine" style="width:100%">
+  </div>
+
+  <div class="img_container">
+    <img class="round" src="peach.jpg" alt="peach" style="width:100%">
+  </div>
+
+  </body>
+</html>
