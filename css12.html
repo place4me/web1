@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS_Animation_Transition</title>
+<style media="screen">
+#trans1{
+  animation-name:animation1;
+  animation-duration:6s;
+  animation-delay:1s;
+  animation-iteration-count:5;
+  animation-direction:alternate;
+  animation-timing-function:ease-in;
+  position:relative;
+}
+@keyframes animation1{
+  0%{width:64px; height:64px; left:0px; top:0px;}
+  25%{width:128px; height:64px; left:300px; top:0px;}
+  50%{width:64px; height:64px; left:300px; top:100px;}
+  75%{width:128px; height:64px; left:0px; top:100px;}
+  100%{width:64px; height:64px; left:0px; top:0px;}
+}
+
+#trans2{
+  animation-name:animation2;
+  width:110px;
+  height:32px;
+  padding:5px;
+  border-radius:12px;
+  text-align:center;
+  color:white;
+  font-family:consolas;
+  font-size:22px;
+  background-color:green;
+  opacity:0.6;
+  animation-duration:6s;
+  animation-delay:1s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-out;
+  position:relative;
+}
+@keyframes animation2{
+  from{left:0px; top:0px; background-color:green;}
+  to{left:60%; top:0px; background-color:purple; transform:rotate(60deg);}
+}
+
+#trans3{
+  width:64px;
+  height:64px;
+  transition: width 5s, height 5s, transform 5s;
+}
+#trans3:hover{
+  width:64px;
+  height:128px;
+  transform:rotate(360deg);
+  object-fit:fill;
+}
+
+#trans4{
+  transition: transform 3s;
+}
+#trans4:hover{
+  transform:rotateY(150deg);
+}
+
+#trans5{
+  transition: transform 3s;
+}
+#trans5:hover{
+  transform:translate3d(200px,50px,0px);
+}
+</style>
+</head>
+
+<body style="margin:0";>
+<a href="index.html" style="font-size:20px;
+    cursor:pointer; font-family:verdana; background-color:#dcdcdc;
+    color:#696969; text-decoration:none; display:block; padding:4px 16px;">Home</a>
+
+<h2>CSS Animation</h2>
+<h3>1) Animation_1</h3>
+<div>
+<img src="icon4.png" alt="icon4" id="trans1">
+</div>
+<br><br><br><br>
+
+<h3>2) Animation_2</h3>
+<div id="trans2">Youngjin</div>
+</div>
+
+<h2>CSS Transition</h2>
+<h3>1) Mouse over the image</h3>
+<img src="icon4.png" alt="icon4" id="trans3">
+<br>
+<h3>2) Mouse over the image</h3>
+<img src="icon4.png" alt="icon4" id="trans4">
+<br>
+<h3>3) Mouse over the image</h3>
+<img src="icon4.png" alt="icon4" id="trans5">
+<br><br><br><br><br>
+<br>
+</body>
+</html>
